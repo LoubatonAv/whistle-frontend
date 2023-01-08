@@ -1,6 +1,8 @@
 import Axios from 'axios';
 
-const BASE_URL = process.env.NODE_ENV === 'production' ? '/api/' : '//localhost:3030/api/';
+// const BASE_URL = process.env.NODE_ENV === 'production' ? '/api/' : '//localhost:3030/api/';
+const BASE_URL =
+  process.env.NODE_ENV === 'production' ? '/https://whistle-tabs-api.onrender.com/' : '//localhost:3030/api/';
 
 var axios = Axios.create({
   withCredentials: true,
